@@ -23,11 +23,6 @@ export const PatchBookResponseSchema = createSelectSchema(book)
           id: true,
         }),
       }),
-    episodes: createSelectSchema(episode)
-      .pick({
-        id: true,
-      })
-      .array(),
     image: createSelectSchema(image).pick({
       alt: true,
       id: true,
