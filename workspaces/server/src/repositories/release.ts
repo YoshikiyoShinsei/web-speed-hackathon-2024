@@ -45,40 +45,7 @@ class ReleaseRepository implements ReleaseRepositoryInterface {
         with: {
           books: {
             columns: {
-              description: true,
               id: true,
-              name: true,
-            },
-            with: {
-              author: {
-                columns: {
-                  description: true,
-                  id: true,
-                  name: true,
-                },
-                with: {
-                  image: {
-                    columns: {
-                      alt: true,
-                      id: true,
-                    },
-                  },
-                },
-              },
-              episodes: {
-                columns: {
-                  chapter: true,
-                  description: true,
-                  id: true,
-                  name: true,
-                },
-              },
-              image: {
-                columns: {
-                  alt: true,
-                  id: true,
-                },
-              },
             },
           },
         },
