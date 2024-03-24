@@ -1,7 +1,7 @@
 import { createSelectSchema } from 'drizzle-zod';
 import type { z } from 'zod';
 
-import { author, book, episode, image } from '../../models';
+import { author, book, image } from '../../models';
 
 export const PostBookResponseSchema = createSelectSchema(book)
   .pick({
